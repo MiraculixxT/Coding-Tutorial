@@ -1,0 +1,8 @@
+main: "de.miraculixx.tutorial.Tutorial"
+name: "TutorialProject"
+version: "1.0.0"
+
+author: "Miraculixx"
+description: "Dies ist ein Tutorial Project!"
+website: "https://mutils.net"
+
