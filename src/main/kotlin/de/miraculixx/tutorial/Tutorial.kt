@@ -1,19 +1,20 @@
 package de.miraculixx.tutorial
 
+import de.miraculixx.kpaper.main.KPaper
 import net.kyori.adventure.text.Component
-import org.bukkit.plugin.java.JavaPlugin
 
-class Tutorial: JavaPlugin() {
+class Tutorial : KPaper() {
 
-    override fun onLoad() {
+
+    override fun load() {
         server.consoleSender.sendMessage(Component.text("Hey, ich wurde geladen!"))
     }
 
-    override fun onEnable() {
-
+    override fun startup() {
+        DamageEvent
     }
 
-    override fun onDisable() {
+    override fun shutdown() {
         server.consoleSender.sendMessage(Component.text("Ich wurde deaktiviert :("))
     }
 }

@@ -6,3 +6,5 @@ author: "Miraculixx"
 description: "Dies ist ein Tutorial Project!"
 website: "https://mutils.net"
 
+libraries:
+  - "de.miraculixx:kpaper:1.1.0"
