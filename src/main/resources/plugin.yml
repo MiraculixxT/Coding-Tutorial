@@ -8,3 +8,5 @@ website: "https://mutils.net"
 
 libraries:
   - "de.miraculixx:kpaper:1.1.0"
+  - "dev.jorel:commandapi-bukkit-shade:9.1.0"
+  - "dev.jorel:commandapi-bukkit-kotlin:9.1.0"

@@ -14,6 +14,8 @@ repositories {
 dependencies {
     paperweight.paperDevBundle("1.20.1-R0.1-SNAPSHOT")
     implementation("de.miraculixx", "kpaper", "1.1.0")
+    implementation("dev.jorel", "commandapi-bukkit-shade", "9.1.0")
+    implementation("dev.jorel", "commandapi-bukkit-kotlin", "9.1.0")
 }
 
 
