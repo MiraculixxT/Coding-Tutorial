@@ -1,7 +1,8 @@
 plugins {
-    kotlin("jvm") version "1.8.22"
-    id("io.papermc.paperweight.userdev") version "1.5.0"
+    kotlin("jvm") version "1.9.10"
+    id("io.papermc.paperweight.userdev") version "1.5.6"
     id("xyz.jpenilla.run-paper") version "1.1.0"
+    id("net.minecrell.plugin-yml.bukkit") version "0.6.0"
 }
 
 group = "de.miraculixx"

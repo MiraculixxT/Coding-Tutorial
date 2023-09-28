@@ -25,7 +25,7 @@ class TimerCommand {
 
         literalArgument("settime") {
             textArgument("time") {
-                anyExecutor { sender, args -> // /timer settime "hello"
+                anyExecutor { sender, args -> // /timer settime "1m 3s"
                     val timeString = args[0] as String
 
                     val time = try {

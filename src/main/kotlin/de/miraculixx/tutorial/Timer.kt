@@ -28,9 +28,7 @@ object Timer {
     }
 
     private fun displayTimer() {
-        val roundTime = time - (time.inWholeMilliseconds % 1000).milliseconds
-
-        val suffix = if (paused) "Timer Pausiert ($roundTime)" else "$roundTime"
+        val suffix = if (paused) "Timer pausiert ($time)" else "$time"
         val display = miniMessages.deserialize("<gradient:#707CF7:#F658CF:$offset><b>$suffix")
         onlinePlayers.forEach { player ->
             player.sendActionBar(display)
@@ -38,13 +36,16 @@ object Timer {
     }
 
     private fun schedule() {
-        task(true, 0, 1) {
+        task(false, 0, 1) {
             offset += 0.05
             if (offset > 1.0) offset -= 2
 
             displayTimer()
+        }
+
+        task(true, 0, 20) {
             if (paused) return@task
-            time += 0.05.seconds
+            time += 1.seconds
         }
     }
 
